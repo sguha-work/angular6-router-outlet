@@ -1,0 +1,136 @@
+<div class="container">
+  <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#"><img src="./assets/images/top_eric.png" /></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"> Messages</a></li>
+            <li><a href="#"> Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="top_container">
+
+     <div class="header">
+  <div class="col-md-12">
+    <div class="col-md-3 col-sm-4">
+      <div class="top_user_pic"></div>
+    </div>
+    <div class="col-md-5 col-sm-4">
+      <div class="header_name">Julieana Mask</div>
+      <div class="header_designation">Senior Solution Architecht</div>
+      <div class="header_location"><img src="../assets/images/header_location_icon.png" />Boston, MA, United State</div>
+    </div>
+    <div class="col-md-3 col-sm-4 btn_margin">
+      <button class="header_btn"><img src="../assets/images/header_rewards_btn.png" />Rewards & Recognition </button>
+      <button class="header_btn"><img src="../assets/images/header_cv_btn.png" />Update CV </button>
+      <button class="header_btn"><img src="../assets/images/header_job_btn.png" />Recommended Job</button>
+    </div>
+  </div>
+</div>
+
+     
+  </div>
+  <div class="col-md-12" style="height:500px">
+      <div class="col-md-3 profile_left_tab">
+          <h2>Profile Completd  80%</h2>
+          <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">Profile Details</a></li>
+            <li><a data-toggle="tab" href="#menu3">Other Details</a></li>
+          </ul>
+          <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+              <h3>Profile Details</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div id="menu3" class="tab-pane fade">
+              <h3>Other Details</h3>
+              <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            </div>
+          </div>
+        </div>
+    
+      <div class="col-md-9">
+                
+          <div class="container ProfileTabs">
+              <ul class="nav nav-pills nav-stacked col-md-4">
+                <li class="active"><a [routerLink]="['/profile', {outlets: {'profileOutlet': ['skill']}}]" data-toggle="pill">
+                  <div class="Tabicon"> <img src="./assets/images/icons_svg/collaboration_cocreation_white.svg" /> </div>
+                  <div class="Tabcontent">
+                    <h4>Skills</h4>
+                    <p>It is a long established fact that a reader will be distracted by the readable layout.</p>
+                  </div>
+                  <div class="clearfix"></div>
+                  </a></li>
+                <li><a [routerLink]="['/profile', {outlets: {'profileOutlet': ['project']}}]" data-toggle="pill">
+                  <div class="Tabicon"> <img src="./assets/images/icons_svg/software_ecosystem_white.svg" /> </div>
+                  <div class="Tabcontent">
+                    <h4>Projects</h4>
+                    <p>It is a long established fact that a reader will be distracted by the readable layout.</p>
+                  </div>
+                  <div class="clearfix"></div>
+                  </a></li>
+                <li><a [routerLink]="['/profile', {outlets: {'profileOutlet': ['certifications']}}]" data-toggle="pill">
+                  <div class="Tabicon"> <img src="./assets/images/icons_svg/NOC_white.svg" /> </div>
+                  <div class="Tabcontent">
+                    <h4>Certifications & 
+                      Evaluations</h4>
+                    <p>It is a long established fact that a reader will be distracted by the readable layout.</p>
+                  </div>
+                  <div class="clearfix"></div>
+                  </a></li>
+              </ul>
+              <router-outlet name="profileOutlet"></router-outlet>
+          </div>
+
+          <div class="col-md-12 box_container"> 
+   
+              <div (click)="objCommonService.gotoPage('competency')" class="col-md-4 col-sm-4 box competency_box">
+               <a href="#">
+                <div class="img"><img src="./assets/images/competency_icon.png" /><span>2 new updates</span></div>
+                <div class="link">Competency <br>
+                  Details</div>
+                <hr>
+                </a>
+              </div>
+              
+              <div class="col-md-4 col-sm-4 box organizational_box">
+               <a href="#">
+                <div class="img"><img src="./assets/images/organizational_icon.png" /><span>1 new update</span></div>
+                <div class="link">Organizational <br>
+                  Details</div>
+                <hr>
+                </a>
+              </div>
+              
+              
+              <div class="col-md-4 col-sm-4 box personal_box">
+               <a href="#">
+                <div class="img"><img src="./assets/images/personal_icon.png" /><span>4 new updates</span></div>
+                <div class="link">Competency <br>
+                  Details</div>
+                <hr>
+                </a>
+              </div>
+            </div>
+
+
+
+     
+      </div>
+
+      
+  </div>
+    
+</div>
+
+
