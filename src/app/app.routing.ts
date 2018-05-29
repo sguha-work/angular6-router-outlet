@@ -13,6 +13,7 @@ const appRoutes: Routes = [
     
     {path:'competency',component:CompetencyDetailsComponent},
     {path:'profile',component:ProfileComponent, children: [
+        {path:'',component:Skill, outlet: 'profileOutlet'},
         {path:'skill',component:Skill, outlet: 'profileOutlet'},
         {path:'project',component:Project, outlet: 'profileOutlet'},
         {path:'certifications',component:Certification, outlet: 'profileOutlet'},

@@ -10,7 +10,7 @@ import {CommonService} from './service/common.service';
 export class AppComponent {
   title = 'Profile';
   constructor(public objCommonService: CommonService) {
-    this.objCommonService.gotoPage("profile");
+    this.objCommonService.gotoPage("profile",{id:100});
   }
   
 }

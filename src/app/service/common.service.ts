@@ -9,8 +9,8 @@ export class CommonService {
   constructor(private router: Router) {
 
   }
-  public gotoPage(pageName: string): Boolean {
-    this.router.navigate(["/"+pageName]);
+  public gotoPage(pageName: string, params?: any): Boolean {
+    this.router.navigate(["/"+pageName], { queryParams: params });
     return false;
   }
 }
